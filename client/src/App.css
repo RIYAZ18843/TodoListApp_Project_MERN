@@ -1,0 +1,96 @@
+/* frontend/src/App.css */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%; /* Ensures full width */
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Soft gradient background */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff; /* White text for contrast */
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%; /* Full width for the form */
+    max-width: 600px; /* Max width for the form container */
+}
+
+.todo-input {
+    padding: 12px;
+    font-size: 16px;
+    flex-grow: 1; /* Make the input take full available space */
+    margin-right: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+}
+
+.todo-input:focus {
+    border-color: #4CAF50; /* Green when focused */
+    outline: none;
+}
+
+.todo-button {
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF; /* Blue primary color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.todo-button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px; /* Ensures the list doesn't exceed the form width */
+    margin: 0 auto; /* Centers the todo list */
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+    transform: scale(1.02); /* Slight hover effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.todo-delete-button {
+    background-color: #FF5733; /* Warm red for delete */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-delete-button:hover {
+    background-color: #e53935; /* Slightly darker red */
+}
